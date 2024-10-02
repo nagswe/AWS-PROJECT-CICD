@@ -6,7 +6,7 @@ secret_key = "xGmDW13VZxQqaxqyw9ZcHvPaS2zK7d9jQbyEHgiD"
 
 resource "aws_instance" "ec2_example" {
   ami                    = "ami-03ceeb33c1e4abcd1"
-  instance_type          = var.instance_type
+  instance_type          = "t2.medium"
   key_name = "dockerswarm"
   tags = {
     Name = "Terraform EC2"
